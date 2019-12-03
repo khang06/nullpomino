@@ -620,8 +620,9 @@ public class VSBattleMode extends AbstractMode {
 				}
 			}
 
-			// 決定
-			if(engine.ctrl.isPush(Controller.BUTTON_A) && (menuTime >= 5)) {
+			// æ±ºå®š
+			//if(engine.ctrl.isPush(Controller.BUTTON_A) && (menuTime >= 5)) {
+			if(true) {
 				engine.playSE("decide");
 
 				if(menuCursor == 7) {
@@ -642,7 +643,7 @@ public class VSBattleMode extends AbstractMode {
 				engine.quitflag = true;
 			}
 
-			// プレビュー用Map読み込み
+			// ãƒ—ãƒ¬ãƒ“ãƒ¥ãƒ¼ç”¨Mapèª­ã�¿è¾¼ã�¿
 			if(useMap[playerID] && (menuTime == 0)) {
 				loadMapPreview(engine, playerID, (mapNumber[playerID] < 0) ? 0 : mapNumber[playerID], true);
 			}
